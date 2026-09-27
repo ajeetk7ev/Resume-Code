@@ -1,0 +1,209 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Adapted for Ajeet Kumar
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom resume commands
+%-------------------------
+\newcommand{\resumeItem}[1]{\item[\textbullet] \small{#1 \vspace{-2pt}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProject}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+    #3
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in, label=\textbullet]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Ajeet Kumar} \\ \vspace{6pt}
+    \small \faPhone\ +91-6201156795 \quad
+    \href{mailto:ajeetk8568@gmail.com}{\faEnvelope\ ajeetk8568@gmail.com} \quad
+    \href{https://www.linkedin.com/in/ajeet-kumar-98b305259/}{\faLinkedin\ linkedin.com/in/ajeet-kumar-98b305259} \\
+    \href{https://github.com/ajeetk7ev}{\faGithub\ github.com/ajeetk7ev} \quad
+    \raisebox{-0.25\height}{\includegraphics[height=10pt]{leetcode.png}}\href{https://leetcode.com/u/ajeet_kumar1234/}{\ leetcode.com/u/ajeet\_kumar1234} \quad
+   
+\end{center}
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.2in, label=\textbullet, itemsep=-2pt]
+\small
+\item \textbf{Languages \& Tools:} TypeScript, JavaScript, C++, Git, GitHub
+\item \textbf{Backend:} Node.js, Express.js, MongoDB, PostgreSQL, REST APIs, WebSocket, Socket.io, JWT, OAuth 2.0, Redis, BullMQ
+\item \textbf{Cloud \& DevOps:} AWS, Docker, GitHub Actions, CI/CD, Nginx
+\item \textbf{Frontend:} React.js, Next.js, TailwindCSS, Zustand
+\item \textbf{AI/ML:} RAG, LLM Integration, Vector Databases, Pinecone, LangChain, LangGraph
+\item \textbf{LeetCode / DSA:} 1000+ problems solved on LeetCode and GFG
+\end{itemize}
+\vspace{-6pt}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+
+\resumeSubHeadingListStart
+
+
+\resumeSubheading
+{Node.js Backend Developer}{April 2026 -- Present}
+{Fraxxra Tech Pvt Ltd. | Remote}{Full-Time}
+\resumeItemListStart
+
+\resumeItem{Architected a scalable \textbf{video ingestion pipeline} supporting \textbf{5--10 GB uploads} using \textbf{AWS S3 multipart uploads and presigned URLs}, enabling direct client-to-S3 transfers while minimizing backend bandwidth and compute overhead.}
+
+\resumeItem{Designed an asynchronous \textbf{video transcoding pipeline} using \textbf{FFmpeg, Redis, and BullMQ}, generating HLS (\textbf{.m3u8}) streams with background processing, retries, and controlled worker concurrency.}
+
+
+\resumeItem{Deployed and containerized production services using \textbf{Docker, AWS EC2, ECR, and S3}, with automated \textbf{GitHub Actions CI/CD} pipelines for image builds, registry publishing, and application deployments.}
+
+
+
+
+\resumeItemListEnd
+
+\resumeSubheading
+{Software Development Engineer (SDE) Intern}{Feb 2026 -- April 2026}
+{TestUnity | Hybrid, Bangalore, Karnataka}{}
+\resumeItemListStart
+\resumeItem{Built the core \textbf{OTP-based authentication system} with OTP generation, verification, expiry, and retry handling.}
+\resumeItem{Developed an \textbf{asynchronous email service} using \textbf{RabbitMQ} and background workers for reliable email processing.}
+\resumeItem{Optimized core \textbf{REST APIs} using \textbf{MongoDB indexing} and \textbf{Redis caching}, reducing average API response time from \textbf{700ms to 230ms}.}
+
+\resumeItemListEnd
+
+
+\resumeSubheading
+{Freelance Full Stack Developer}{Jun 2025 -- Jan 2026}
+{Self-Employed | Remote}{}
+\resumeItemListStart
+\resumeItem{Built and delivered full-stack web applications using React, Node.js, Express.js, and MongoDB for multiple clients.}
+\resumeItem{Designed scalable REST APIs, authentication systems, and optimized database queries for production-ready applications.}
+\resumeItem{Engineered applications to scale reliably, with products collectively serving \textbf{1000+ users} through performance optimization and efficient backend architecture.}
+
+\resumeItemListEnd
+
+
+
+\resumeSubHeadingListEnd
+%-----------PROJECTS-----------
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProject
+{CrackDSA – DSA Learning \& Revision Platform}
+{\faLink\ \href{https://crackdsa.co.in}{Live} \quad
+ \faGithub\ \href{https://github.com/ajeetk7ev/crackdsa-backend}{GitHub}}
+{
+  \resumeItemListStart
+    \resumeItem{Built a full-stack DSA learning platform for structured interview preparation and long-term problem retention.}
+    \resumeItem{Curated \textbf{500+ premium LeetCode problems} with notes, collections, revision queue, and progress tracking.}
+    \resumeItem{Developed authentication with jwt and Google auth, interview readiness dashboard, LeetCode integration, and analytics.}
+    \resumeItem{Launched publicly, serving \textbf{100+ users} while iterating rapidly based on community feedback.}
+  \resumeItemListEnd
+ 
+}
+
+\resumeProject
+{CodeOwl – AI-Powered GitHub Code Review Platform}
+{\faLink\ \href{https://codeowl.ajeetdev.online/}{Live} \quad
+\faGithub\ \href{https://github.com/ajeetk7ev/CodeOwl-AI-CodeReviewer}{GitHub}}
+{
+\resumeItemListStart
+\resumeItem{Built an automated \textbf{GitHub PR review pipeline} using webhooks, \textbf{BullMQ}, Redis, and OpenRouter.}
+\resumeItem{Implemented \textbf{RAG with Pinecone} to retrieve relevant repository context for AI-generated code reviews.}
+\resumeItem{Designed \textbf{Redis-backed background jobs} with retry and failure handling for asynchronous PR processing.}
+
+
+\resumeItemListEnd
+\textbf{Tech Stack:} React, TypeScript, Node.js, Express, MongoDB, Pinecone, OpenRouter, Redis, BullMQ, Docker
+}
+
+
+\resumeProject
+{CodeArena – Distributed Online Code Evaluation Platform}
+{\faLink\ \href{https://codearena.ajeetdev.online}{Live} \quad
+ \faGithub\ \href{https://github.com/ajeetk7ev/CodeArena}{GitHub}}
+{
+  \resumeItemListStart
+    \resumeItem{Built orchestration layer on \textbf{Judge0}; queue management, result polling, and live verdict delivery via \textbf{http-pooling}.}
+    \resumeItem{\textbf{Redis + BullMQ} async execution reduced API latency \textbf{1.8s $\rightarrow$ 810ms}, supporting \textbf{80+ concurrent submissions}.}
+    \resumeItem{\textbf{Nginx} reverse proxy + \textbf{GitHub Actions CI/CD} for automated, zero-downtime deployments.}
+   
+  \resumeItemListEnd
+  \textbf{Tech Stack:} Node.js, TypeScript, Socket.io, Redis, BullMQ, Docker, Judge0, Nginx, GitHub Actions
+}
+
+\resumeSubHeadingListEnd
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+  {Sri Venkateshwara College of Engineering and Technology, Andhra Pradesh}
+  {2022 -- 2026}
+  {B.Tech in Computer Science and Engineering (CSE)}
+  {CGPA: 7.23 / 10}
+\resumeSubHeadingListEnd
+
+\end{document}
